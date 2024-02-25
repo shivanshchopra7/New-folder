@@ -6,32 +6,7 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-[#212121] min-h-[100vh] w-[100%] m-0 text-white">
-    <script>
-        function updateTime() {
-            // Get the current time
-            let now = new Date();
-            
-            // Extract hours, minutes, and seconds
-            let hours = now.getHours().toString().padStart(2, '0');
-            let minutes = now.getMinutes().toString().padStart(2, '0');
-            let seconds = now.getSeconds().toString().padStart(2, '0');
-            
-            // Determine if it's AM or PM
-            let period = (now.getHours() >= 12) ? 'PM' : 'AM';
-            
-            // Convert 24-hour format to 12-hour format
-            hours = (hours > 12) ? (hours - 12).toString().padStart(2, '0') : hours;
-            
-            // Update the timer display
-            document.getElementById('timer').textContent = hours + ':' + minutes + ':' + seconds + ' ' + period;
-        }
-        
-        // Update the time every second
-        setInterval(updateTime, 1000);
-        
-        // Initial call to display the time immediately
-        updateTime();
-        </script>
+    
     <div class="px-6 mt-6 ml-10 mb-6">
 <header class="grid grid-cols-6 gap-x-[2rem] gap-y-[12rem] justify-center mt-6">
 <nav class="block" >
@@ -270,5 +245,31 @@ About
     <span class="mono">v. 8.23</span>
 </div>
     </footer>
+    <script>
+        function updateTime() {
+            // Get the current time
+            let now = new Date();
+            
+            // Extract hours, minutes, and seconds
+            let hours = now.getHours().toString().padStart(2, '0');
+            let minutes = now.getMinutes().toString().padStart(2, '0');
+            let seconds = now.getSeconds().toString().padStart(2, '0');
+            
+            // Determine if it's AM or PM
+            let period = (now.getHours() >= 12) ? 'PM' : 'AM';
+            
+            // Convert 24-hour format to 12-hour format
+            hours = (hours > 12) ? (hours - 12).toString().padStart(2, '0') : hours;
+            
+            // Update the timer display
+            document.getElementById('timer').textContent = hours + ':' + minutes + ':' + seconds + ' ' + period;
+        }
+        
+        // Update the time every second
+        setInterval(updateTime, 1000);
+        
+        // Initial call to display the time immediately
+        updateTime();
+        </script>
 </body>
 </html>
