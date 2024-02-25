@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[#212121] min-h-[100vh] w-[100%] m-0 text-white">
+    <script>
+        function updateTime() {
+            // Get the current time
+            let now = new Date();
+            
+            // Extract hours, minutes, and seconds
+            let hours = now.getHours().toString().padStart(2, '0');
+            let minutes = now.getMinutes().toString().padStart(2, '0');
+            let seconds = now.getSeconds().toString().padStart(2, '0');
+            
+            // Determine if it's AM or PM
+            let period = (now.getHours() >= 12) ? 'PM' : 'AM';
+            
+            // Convert 24-hour format to 12-hour format
+            hours = (hours > 12) ? (hours - 12).toString().padStart(2, '0') : hours;
+            
+            // Update the timer display
+            document.getElementById('timer').textContent = hours + ':' + minutes + ':' + seconds + ' ' + period;
+        }
+        
+        // Update the time every second
+        setInterval(updateTime, 1000);
+        
+        // Initial call to display the time immediately
+        updateTime();
+        </script>
+    <div class="px-6 mt-6 ml-10 mb-6">
+<header class="grid grid-cols-6 gap-x-[2rem] gap-y-[12rem] justify-center mt-6">
+<nav class="block" >
+<ul class="list-none">
+<li>
+    <a href="/">:)</a>
+</li>
+<li >
+<a href="/about">
+About
+</a>
+</li>
+<li >
+    <a href="/work">
+    Work
+    </a>
+    </li>
+    <li >
+        <a href="/afterwork">
+        Afterwork
+        </a>
+        </li>
+</ul>
+</nav>
+<div class="inline-flex justify-start" style="grid-column-start: -2;">
+    <a href="mailto:hi@alikimovich.com" target="_blank" class="flex items-center gap-2">
+        <img src="mail.png" class="h-6 w-6" style="filter: invert(1);"> 
+        <p class="ml-3">say hi</p>
+    </a>
+</div>
+
+</header>
+    </div>
+    <main class="grid mt-20 ml-[180px]">
+<div >
+    <h1 class="font-bold">Good Afternoon 
+       
+        , I'm Adrei
+    </h1>
+<p class="w-[50%] mt-4">
+    I’m a Seattle-based product designer. I design web and mobile applications, build tools for Figma community and occasionally mentor fellow designers. I enjoy playing games and tinkering with JavaScript and SwiftUI in my spare time.
+</p>
+
+<p class="mt-4 text-orange-500 hover:underline">
+    <a href="/about">more about me
+        →
+    </a>
+
+</p>
+
+</div>
+
+<div class="grid grid-cols-2 row-start-2">
+    <!-- Left Grid for Work Section -->
+    <div class="col-span-1">
+        <div class="grid gap-4">
+            <h2 class="mb-5 mt-20">Work</h2>
+            <!-- Work Experience Items -->
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>Swiftly</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;" />
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0">
+                    <span>Senior Product Designer</span>
+                    &nbsp;
+&nbsp;
+                    <span>2022 - </span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>Veeam</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;" />
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0 ">
+                    <span>Web Designer</span>
+                    &nbsp;
+&nbsp;
+                    <span>2020 - 22</span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>Cointelegraph</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;" />
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0 ">
+                    <span>Senior Product Designer</span>
+                    &nbsp;
+&nbsp;
+                    <span>2019 - 20</span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>Msoft</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;"/>
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0 ">
+                    <span>UX Lead</span>
+                    &nbsp;
+&nbsp;
+                    <span>2017 - 19</span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>AGIMA</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;" />
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0 ">
+                    <span>Senior UX Designer</span>
+                    &nbsp;
+&nbsp;
+                    <span>2015 - 17</span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>PLUS8</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;" />
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0 ">
+                    <span>Founder, Designer</span>
+                    &nbsp;
+&nbsp;
+                    <span>2014 - 19</span>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center self-stretch mb-2 gap-4">
+                <h3>Freelance</h3>
+                <hr class="flex-grow flex-shrink-0 flex-basis-0" style="border-top: 1px dashed white;" />
+                <div class="flex items-center self-stretch flex-grow flex-shrink-0 flex-basis-0 ">
+                    <span>Senior Product Designer</span>
+                    &nbsp;
+&nbsp;
+                    <span>2012 - 14</span>
+                </div>
+            </div>
+        </div>
+        <p class="mt-4 text-orange-500 hover:underline">
+            <a href="/projects">read about my work
+                →
+            </a>
+        
+        </p>
+        
+    </div>
+    
+
+    <!-- Right Grid for Online and Offline Sections -->
+    <div class="mt-10 ">
+        <div class="grid gap-4">
+            <!-- Online Section -->
+            <div class="grid row-start-2 col-start-7 ">
+                <h2 class="mb-6">Online</h2>
+                <ul class="list-none">
+                    <li class="text-orange-600"><a href="https://www.linkedin.com/in/alikimovich/" target="_blank" class="accent   paragraph svelte-nhcyw3" rel="noopener noreferrer"> LinkedIn</a></li>
+                    <li class="text-orange-600"><a href="https://www.figma.com/@lkmvch" target="_blank" class="accent   paragraph svelte-nhcyw3" rel="noopener noreferrer"> Figma</a></li>
+                    <li class="text-orange-600"><a href="https://www.behance.net/alikimovich" target="_blank" class="accent   paragraph svelte-nhcyw3" rel="noopener noreferrer"> Behance</a></li>
+                </ul>
+    </div>
+
+            <!-- Offline Section -->
+            <div class="grid row-start-2 col-start-8">
+                <h2 class="mb-0 mt-0">Offline</h2>
+                <ul class="list-none m-0 p-0">
+                    <li>Mumbai, India</li>
+                    <div id="timer"></div>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="mt-20 mb-5">
+<h1 class="font-bold"> personal projects and experiments</h1>
+</div>
+<div class="grid grid-cols-3">
+  
+    <!-- Project 1 -->
+    <div >
+        <a href="#" class="text-lg font-bold hover:underline">dynamic type preview &nearr;</a>
+        <p class="text-sm w-[60%]">Preview your mockups at different Dynamic Type sizes</p>
+    </div>
+    <div >
+        <a href="#" class="text-lg font-bold hover:underline">bind colors to variables &nearrow; </a>
+        <p class="text-sm w-[60%]">Replace hex colors with color variables of the same values in Figma</p>
+    </div>
+    <div >
+        <a href="#" class="text-lg font-bold hover:underline">app store reviews &nearr;</a>
+        <p class="text-sm w-[60%]">A Postman collection for retrieving and visualizing app store reviews</p>
+    </div>
+    <div class="pt-6">
+        <a href="#" class="text-lg font-bold hover:underline">color variables style guide &nearr;</a>
+        <p class="text-sm w-[60%]">Figma plugin that creates color style guides based on color variables</p>
+    </div>
+    <div class=" pt-6">
+        <a href="#" class="text-lg font-bold hover:underline">inhale &nearr;</a>
+        <p class="text-sm w-[60%]">Award-winning design concept for an app for breathing</p>
+    </div>
+    <div class=" pt-6">
+        <a href="#" class="text-lg font-bold hover:underline">simple palette generator &nearr;</a>
+        <p class="text-sm w-[60%]">Figma plugin for creating accessible color palettes</p>
+    </div>
+    <div class=" pt-6">
+        <a href="#" class="text-lg font-bold hover:underline">the octopus magazine &nearr; </a>
+        <p class="text-sm w-[60%]">Design concept for a tech media app</p>
+    </div>
+    <div class=" pt-6">
+        <a href="#" class="text-lg font-bold hover:underline">my old portfolio website &nearr;</a>
+        <p class="text-sm w-[60%]">Award-winning portfolio website with case studies and some nice octopig</p>
+    </div>
+    <div class=" pt-6">
+        <a href="#" class="text-lg font-bold hover:underline">wrap in a section &nearr; </a>
+        <p class="text-sm w-[60%]">Figma plugin. Create or resize a section around selected layers</p>
+    </div>
+    <p class="mt-4 text-orange-500 hover:underline">
+        <a href="/projects">list of projects
+            →
+        </a>
+    
+    </p>
+</div>
+
+  
+    </main>
+ 
+
+    <footer class="flex mt-20 ml-20 mr-20 justify-between mb-8">
+<div>
+    © 
+    <span class="mono">2024</span>
+    , Andrei Alikimovich
+</div>
+<div>
+    <span class="mono">v. 8.23</span>
+</div>
+    </footer>
+</body>
+</html>
