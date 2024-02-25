@@ -749,6 +749,10 @@ video {
   align-self: stretch;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .bg-\[\#212121\] {
   --tw-bg-opacity: 1;
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
